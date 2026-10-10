@@ -1,0 +1,46 @@
+{
+  "name": "crypto-bot-backtest",
+  "version": "1.0.0",
+  "description": "Backtest crypto trading strategies on 100+ exchanges. Fees, intrabar stops, Sharpe, drawdown. MIT licensed.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "cbb": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "backtest": "tsx examples/backtest.ts",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "ccxt": "^4.4.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@vitest/coverage-v8": "^5.0.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "backtesting",
+    "crypto",
+    "trading",
+    "ccxt",
+    "typescript",
+    "quant"
+  ],
+  "license": "MIT"
+}

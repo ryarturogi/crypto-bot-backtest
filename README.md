@@ -80,7 +80,7 @@ Most backtesting tutorials hand you a loop over some candles and print a profit 
 
 ## Install
 
-Requires Node 20+.
+Requires Node 24.22.1+.
 
 ```bash
 git clone <repo-url>
